@@ -17,3 +17,10 @@ only to use get time between start and stop button click
 ## TODO
 
 - [ ] save the record on DB, (sqlite / postgres)
+
+
+
+![image-20220121145112530](F:\dev\net6\StopWatch\image-20220121145112530.png)
+
+![image-20220121145157594](F:\dev\net6\StopWatch\image-20220121145157594.png)
+
