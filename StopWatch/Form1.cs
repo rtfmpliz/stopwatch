@@ -81,7 +81,7 @@ namespace StopWatch
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = sw.Elapsed.Hours.ToString("00") + ":" + sw.Elapsed.Minutes.ToString("00") +":"+ sw.Elapsed.Seconds.ToString("00");
+            label1.Text =  sw.Elapsed.Minutes.ToString("00") +":"+ sw.Elapsed.Seconds.ToString("00");
             Application.DoEvents();
         }
 
