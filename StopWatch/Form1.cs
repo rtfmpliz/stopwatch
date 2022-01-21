@@ -28,7 +28,7 @@ namespace StopWatch
         private KeyHandler ghk;
         public Form1()
         {
-            ghk = new KeyHandler(Keys.PrintScreen, this);
+            ghk = new KeyHandler(Keys.Multiply, this);
             ghk.Register();
 
             InitializeComponent();
@@ -98,7 +98,7 @@ namespace StopWatch
         //https://stackoverflow.com/questions/18291448/how-do-i-detect-keypress-while-not-focused
         protected override void WndProc(ref Message m)
         {
-            if (m.Msg == Constants.WM_HOTKEY_MSG_ID)
+            if (m.Msg == Constants.VK_MULTIPLY)
                 StartTimer();
             base.WndProc(ref m);
         }
