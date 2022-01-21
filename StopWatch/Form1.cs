@@ -31,7 +31,9 @@ namespace StopWatch
             //winform on bottom-right
             // https://stackoverflow.com/questions/1385674/place-winform-on-bottom-right
                 this.StartPosition = FormStartPosition.Manual;
-                this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - this.Width, Screen.PrimaryScreen.WorkingArea.Height - this.Height);
+                //this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - this.Width, Screen.PrimaryScreen.WorkingArea.Height - this.Height);
+            //middle top center    
+            this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width /2 - this.Width /2, 0);
             this.TopMost = true;
 
             //round-shape-button
@@ -41,16 +43,7 @@ namespace StopWatch
             button1.Region = new Region(p);
             
         }
-        public class RoundButton : Button
-        {
-            protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
-            {
-                GraphicsPath grPath = new GraphicsPath();
-                grPath.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
-                this.Region = new System.Drawing.Region(grPath);
-                base.OnPaint(e);
-            }
-        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
