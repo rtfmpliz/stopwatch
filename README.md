@@ -20,7 +20,7 @@ only to use get time between start and stop button click
 
 
 
-![image-20220121145112530](.\image-20220121145112530.png)
+![image-20220121145112530](image-20220121145112530.png)
 
-![image-20220121145157594](.\image-20220121145157594.png)
+![image-20220121145157594](image-20220121145157594.png)
 
